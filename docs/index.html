@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodLogístic</title>
+
+    <style>
+        /* ===========================
+           VARIABLES GLOBALS
+        ============================ */
+        :root {
+            --color-primary: #1a73e8;
+            --color-secondary: #0c3c78;
+            --color-light: #f5f7fa;
+            --color-dark: #1a1a1a;
+            --font-main: "Inter", sans-serif;
+        }
+
+        /* ===========================
+           RESET BÀSIC
+        ============================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background: var(--color-light);
+            color: var(--color-dark);
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* ===========================
+           HEADER & NAV
+        ============================ */
+        header {
+            background: white;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--color-dark);
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: var(--color-primary);
+        }
+
+        /* ===========================
+           HERO
+        ============================ */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        /* ===========================
+           SECCIONS GENERALS
+        ============================ */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            margin-bottom: 1.5rem;
+            color: var(--color-secondary);
+        }
+
+        /* ===========================
+           SERVEIS
+        ============================ */
+        .serveis-grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .servei {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .servei img {
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+
+        /* ===========================
+           CONTACTE
+        ============================ */
+        form {
+            display: grid;
+            gap: 1rem;
+        }
+
+        input, textarea {
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        button {
+            background: var(--color-primary);
+            color: white;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background: var(--color-secondary);
+        }
+
+        /* ===========================
+           FOOTER
+        ============================ */
+        footer {
+            background: var(--color-dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        /* ===========================
+           RESPONSIVE
+        ============================ */
+        @media (min-width: 768px) {
+            .serveis-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===========================
+         HEADER
+    ============================ -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inici">Inici</a></li>
+                <li><a href="#serveis">Serveis</a></li>
+                <li><a href="#nosaltres">Nosaltres</a></li>
+                <li><a href="#contacte">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===========================
+         HERO
+    ============================ -->
+    <section id="inici" class="hero">
+        <h1>FoodLogístic</h1>
+        <p>Solucions logístiques eficients per al sector alimentari. Optimitzem processos, garantim qualitat i impulsem el teu negoci.</p>
+    </section>
+
+    <!-- ===========================
+         SERVEIS
+    ============================ -->
+    <section id="serveis">
+        <h2>Serveis</h2>
+
+        <div class="serveis-grid">
+            <div class="servei">
+                <img src="https://images.unsplash.com/photo-1581091870627-3b5c7f1d5c4f?auto=format&fit=crop&w=800&q=80" alt="Transport alimentari">
+                <h3>Transport Alimentari</h3>
+                <p>Distribució ràpida i segura amb control de temperatura i traçabilitat completa.</p>
+            </div>
+
+            <div class="servei">
+                <img src="https://images.unsplash.com/photo-1581091012184-5c7d3f6b8f1e?auto=format&fit=crop&w=800&q=80" alt="Magatzematge">
+                <h3>Magatzematge</h3>
+                <p>Instal·lacions modernes amb zones refrigerades i sistemes de control intel·ligent.</p>
+            </div>
+
+            <div class="servei">
+                <img src="https://images.unsplash.com/photo-1523475496153-3d6cc3000f87?auto=format&fit=crop&w=800&q=80" alt="Gestió logística">
+                <h3>Gestió Logística</h3>
+                <p>Planificació integral per optimitzar rutes, costos i temps de lliurament.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         NOSALTRES
+    ============================ -->
+    <section id="nosaltres">
+        <h2>Nosaltres</h2>
+        <p>Som un equip especialitzat en logística alimentària amb més de 15 anys d’experiència. Treballem amb tecnologia avançada i processos optimitzats per garantir un servei excel
