@@ -23,7 +23,8 @@ Per la creació d'aquesta web, s'han utilitzat les següents tecnologies i eines
 - Copilot
 - HTML5/CSS3
 - Statcounter per l'analítica
-- [Anar a veure codi de la web, demostració](../docs/index.html)    
+- [Anar a veure codi de la web](../Web-corporativa-FoodLogistic/docs)    
+[Anar a la Guia](../Tasca02/Guia.md)       
 
 ## Autor
 
