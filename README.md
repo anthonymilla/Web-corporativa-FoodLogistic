@@ -23,8 +23,7 @@ Per la creació d'aquesta web, s'han utilitzat les següents tecnologies i eines
 - Copilot
 - HTML5/CSS3
 - Statcounter per l'analítica
- 
-[Ver index.html](docs/index.html)
+- [Veure codi de la web, demostració](docs/index.html)
 
 ## Autor
 
